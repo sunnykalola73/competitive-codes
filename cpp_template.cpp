@@ -24,4 +24,7 @@ int main()
 }
 void solve()
 {
+	int n =0;
+	cin>>n;
+	cout<<"Hello World"<<n<<"!!";
 }
