@@ -50,6 +50,7 @@ void solve(int a[], int size)
 
 	cout<<max_so_far<<endl;
 
+
 	// This prints the start adn end index of the subarray
 	cout<<start<<"-"<<end<<endl;
 }
