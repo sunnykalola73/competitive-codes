@@ -33,4 +33,6 @@
 
 # Custom
 .DS_Store
-code
+error.txt
+input.txt
+output.txt
