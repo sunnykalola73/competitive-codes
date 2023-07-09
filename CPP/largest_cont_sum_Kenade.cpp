@@ -42,8 +42,6 @@ void solve(int a[], int size)
         }
 
 		if(max_end_here < 0){
-
-
 			max_end_here =0;
 			s = i+1;
 		}
