@@ -37,7 +37,15 @@ int main(){
 	root->right->left = new Node(6);
 	root->right->right = new Node(7);
 
+	cout<<endl<<"Pre-order:"<<endl;
 	preOrder(root);
+
+	cout<<endl<<"In-order:"<<endl;
+	inOrder(root);
+
+	cout<<endl<<"Post-order:"<<endl;
+	postOrder(root);
+
 
 	return 0;
 }
@@ -50,6 +58,26 @@ void preOrder(Node* root){
 	cout<<root->data<<" ";
 	preOrder(root->left);
 	preOrder(root->right);
+}
+
+void inOrder(Node* root){
+	if(root== NULL){
+		return;
+	}
+
+	inOrder(root->left);
+	cout<<root->data<<" ";
+	inOrder(root->right);
+}
+
+void postOrder(Node* root){
+	if(root== NULL){
+		return;
+	}
+
+	postOrder(root->left);
+	postOrder(root->right);
+	cout<<root->data<<" ";
 }
 
 // void solve()
